@@ -24,8 +24,8 @@
 bindings = <
    &trans &kp SQT       &kp COMMA &kp DOT &kp P &kp Y   &kp F &kp G  &kp C     &kp R   &kp L      &trans
    &trans &kp A         &kp O     &kp E   &kp U &kp I   &kp D &kp H  &kp T     &kp N   &kp S      &trans
-   &trans &mt LSFT SEMI &kp Q     &kp J   &kp K &kp X   &kp B &kp M  &kp W     &kp V   &mt RSFT Z &trans
-   &lt LAYER_NUMBER BKSP &lt LAYER_MIRROR SPACE &lt LAYER_SYMBOL RET   &mt RGUI TAB &mt RCTL F13 &mt RALT ESC
+   &trans &mt LSFT SEMI &kp Q     &kp J   &kp K &kp X   &kp B &kp M  &kp W     &kp V   &kp Z      &trans
+   &lt LAYER_NUMBER BKSP &kp SPACE &lt LAYER_SYMBOL RET   &lt LAYER_FUNC TAB &mt RCTL F13 &mt RALT ESC
                         >;
                 };
                 lower_layer { // 1
@@ -41,10 +41,10 @@ bindings = <
                 raise_layer { // 2
                         label = "SYMBOL";
                         bindings = <
-   &trans &kp GRAVE &kp TILDE &kp INS  &kp DEL   &kp COLON     &trans &kp LBRC &kp RBRC &kp LBKT  &kp RBKT  &trans 
-   &trans &kp UNDER &kp PLUS  &kp BSLH &kp FSLH  &kp QMARK     &trans &trans   &kp PIPE &kp EQUAL &kp MINUS &trans  
-   &trans &kp HOME  &kp PGDN  &kp PGUP &kp END   &sk LCTL      &trans &trans   &trans   &trans    &trans    &trans 
-                    	      &trans &mo LAYER_FUNC &trans   &trans &trans &trans
+   &trans &kp INS   &kp DEL   &trans   &trans    &trans        &trans      &kp LBKT &kp RBKT &kp LBRC  &kp RBRC  &trans 
+   &trans &kp UNDER &kp PLUS  &kp PIPE &kp QMARK &kp TILDE     &kp GRAVE   &kp FSLH &kp BSLH &kp EQUAL &kp MINUS &trans
+   &trans &kp HOME  &kp PGDN  &kp PGUP &kp END   &sk LCTL      &trans      &kp F21  &kp F22  &kp F23   &mt RSFT COLON &trans
+                    	      &trans &mo LAYER_MIRROR &trans   &trans &trans &trans
                         >;
                 };
 
@@ -53,17 +53,17 @@ bindings = <
                         bindings = <
    &trans &kp L &kp R  &kp C &kp G &kp F     &trans &trans   &trans   &trans    &trans    &trans 
    &trans &kp S &kp N  &kp T &kp H &kp D     &trans &trans   &trans   &trans    &trans    &trans 
-   &trans &kp Z &kp V  &kp W &kp M &kp B     &trans &trans   &trans   &trans    &trans    &trans 
-                      &kp LSFT &trans &trans    &trans &trans &trans 
+   &trans &mt LSFT Z &kp V  &kp W &kp M &kp B     &trans &trans   &trans   &trans    &trans    &trans 
+                      &trans &trans &trans    &trans &trans &trans 
                         >;
                 };
                 
                 function_layer { // 4
                         label = "FUNC";
                         bindings = <
-&trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &bt BT_CLR &trans  &trans &trans  &trans    &trans  
 &trans  &kp F1       &kp F2       &kp F3       &kp F4       &kp F5          &kp F6     &kp F7        &kp F8       &kp F9  &kp F10   &trans
 &trans  &kp F11      &kp F12      &kp F13      &kp F14      &kp F15         &kp F16    &kp F17       &kp F18      &kp F19 &kp F20   &trans
+&trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &bt BT_CLR &trans  &trans &trans  &trans    &trans  
                               &trans &trans &trans   &trans &trans &trans
                         >;
                 };
